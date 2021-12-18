@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Checker</title>
+</head>
+<body style="background-color: rgb(223, 126, 126);font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+<div style="text-align: center;">
+
+<h1 style="color: honeydew;"> Password Checker!</h1>
+<input type="text" id="input">
+<button onclick="check()">Check</button>
+<h4>(The correct password is chatbox)</h4>
+
+<h1 id="result1" style="background-color: honeydew;"></h1>
+
+</div>
+
+
+<script>
+function check() {
+ var password = document.getElementById("input").value;
+ var answer1 = "You've entered the CORRECT password!";
+ var answer2 = "You've entered the WRONG password!";
+ 
+ if (password == "chatbox") {
+     document.getElementById("result1").innerText = answer1;
+ }
+ else {
+    document.getElementById("result1").innerText = answer2;
+ }
+}
+
+</script>
+</body>
+</html>
